@@ -1,7 +1,7 @@
     keycode 2   = 1               exclam           section               exclamdown
     keycode 3   = 2               quotedbl         twosuperior           dead_doublegrave      
     keycode 4   = 3               at               sterling                                     
-    keycode 5   = 4               dollar           dollar                currency              
+    keycode 5   = 4               U20AC            dollar                currency              
     keycode 6   = 5               percent          onehalf               U2030                 
     keycode 7   = 6               ampersand                                                      
     keycode 8   = 7               braceleft                                                      
