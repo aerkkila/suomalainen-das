@@ -2,7 +2,7 @@
     keycode 3   = 2               quotedbl         twosuperior           dead_doublegrave      
     keycode 4   = 3               at               sterling                                     
     keycode 5   = 4               dollar           dollar                currency              
-    keycode 6   = 5               percent          onehalf               U2030                 
+    keycode 6   = 5               percent          onehalf                                
     keycode 7   = 6               ampersand                                                      
     keycode 8   = 7               braceleft                                                      
     keycode 9   = 8               parenleft        bracketleft                                  
@@ -12,15 +12,15 @@
     keycode 13  = equal           numbersign       approxeq              notequal
 
     keycode 16  = p               P                dead_belowdot         Greek_pi
-    keycode 17  = h               H                U036A
+    keycode 17  = h               H                
     keycode 18  = r               R                dead_circumflex       dead_belowcircumflex
     keycode 19  = k               K                dead_caron
     keycode 20  = less            greater          lessthanequal         greaterthanequal
-    keycode 21  = apostrophe      bar              U201E                 U201C
+    keycode 21  = apostrophe      bar                               
     keycode 22  = w               W                schwa                 SCHWA
     keycode 23  = u               U                uacute                Uacute
     keycode 24  = y               Y                dead_breve            dead_belowbreve
-    keycode 25  = b               B                U0332                 U0305
+    keycode 25  = b               B                                 
     keycode 26  = q               Q                oe                    OE
     keycode 27  = z               Z                zcaron                Zcaron
 
@@ -28,12 +28,12 @@
     keycode 31  = l               L                dead_acute            lstroke
     keycode 32  = n               N                dead_grave            nabla
     keycode 33  = t               T                thorn                 THORN
-    keycode 34  = v               V                U0263                 U0194
+    keycode 34  = v               V                
     keycode 35  = g               G                eng                   ENG
     keycode 36  = a               A                aacute                Aacute
     keycode 37  = i               I                iacute                Iacute
     keycode 38  = o               O                oacute                Oacute
-    keycode 39  = e               E                Greek_epsilon         U2208
+    keycode 39  = e               E                Greek_epsilon
     keycode 40  = c               C                ccedilla              Ccedilla
 #   key <TLDE> { [  backslash       dead_tilde       dead_belowtilde
 
@@ -43,12 +43,12 @@
     keycode 45  = d               D                eth                   ETH
     keycode 46  = m               M                mu
     keycode 47  = j               J                Greek_zeta
-    keycode 48  = aring           Aring            U0325                 dead_abovering
+    keycode 48  = aring           Aring            dead_belowring        dead_abovering
     keycode 49  = odiaeresis      Odiaeresis       oslash                Oslash
     keycode 50  = adiaeresis      Adiaeresis       ae                    AE
     keycode 51  = comma           semicolon        dead_belowcomma
-    keycode 52  = period          colon            U0307                 dead_diaeresis
-    keycode 53  = minus           underscore       U2013                 dead_macron
+    keycode 52  = period          colon            dead_diaeresis
+    keycode 53  = minus           underscore       dead_macron
 
     include "linux-with-alt-and-altgr"
 #   include "level3(ralt_switch)"
