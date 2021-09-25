@@ -1,3 +1,4 @@
+keycode 41  = backslash       dead_tilde
 keycode 2   = one             exclam           section               exclamdown
 keycode 3   = two             quotedbl         twosuperior           dead_doublegrave      
 keycode 4   = three           at               sterling                                     
@@ -36,9 +37,8 @@ keycode 38  = o               O                oacute                Oacute
 keycode 39  = e               E                epsilon
 keycode 40  = c               C                ccedilla              Ccedilla
 
-keycode 41  = backslash       dead_tilde
 keycode 43  = asterisk        slash            dead_cedilla
-keycode 54  = f               F                U+2202
+keycode 86  = f               F                U+2202
 keycode 44  = x               X                multiply              division
 keycode 45  = d               D                eth                   ETH
 keycode 46  = m               M                mu
@@ -50,6 +50,4 @@ keycode 51  = comma           semicolon        dead_belowcomma
 keycode 52  = period          colon            dead_diaeresis
 keycode 53  = minus           underscore       dead_macron
 
-    include "linux-with-alt-and-altgr"
-#   include "level3(ralt_switch)"
-#   include "compose(rwin)"
+include "linux-with-alt-and-altgr"
