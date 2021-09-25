@@ -7,17 +7,17 @@
     keycode 8   = 7               braceleft                                                      
     keycode 9   = 8               parenleft        bracketleft                                  
     keycode 10  = 9               parenright       bracketright                                 
-    keycode 11  = 0               braceright       degree                infinity
+    keycode 11  = 0               braceright       degree
     keycode 12  = plus            question         plusminus             questiondown
-    keycode 13  = equal           numbersign       approxeq              notequal
+    keycode 13  = equal           numbersign       #approxeq              notequal
 
-    keycode 16  = p               P                dead_belowdot         Greek_pi
+    keycode 16  = p               P                dead_belowdot         #Greek_pi
     keycode 17  = h               H                
-    keycode 18  = r               R                dead_circumflex       dead_belowcircumflex
+    keycode 18  = r               R                dead_circumflex       #dead_belowcircumflex
     keycode 19  = k               K                dead_caron
-    keycode 20  = less            greater          lessthanequal         greaterthanequal
+    keycode 20  = less            greater          #lessthanequal         greaterthanequal
     keycode 21  = apostrophe      bar                               
-    keycode 22  = w               W                schwa                 SCHWA
+    keycode 22  = w               W                #schwa                 SCHWA
     keycode 23  = u               U                uacute                Uacute
     keycode 24  = y               Y                dead_breve            dead_belowbreve
     keycode 25  = b               B                                 
@@ -33,17 +33,17 @@
     keycode 36  = a               A                aacute                Aacute
     keycode 37  = i               I                iacute                Iacute
     keycode 38  = o               O                oacute                Oacute
-    keycode 39  = e               E                Greek_epsilon
+    keycode 39  = e               E                #Greek_epsilon
     keycode 40  = c               C                ccedilla              Ccedilla
 #   key <TLDE> { [  backslash       dead_tilde       dead_belowtilde
 
     keycode 41  = asterisk        slash            dead_cedilla
-    keycode 43  = f               F                partialderivative
+    keycode 43  = f               F                #partialderivative
     keycode 44  = x               X                multiply              division
     keycode 45  = d               D                eth                   ETH
     keycode 46  = m               M                mu
-    keycode 47  = j               J                Greek_zeta
-    keycode 48  = aring           Aring            dead_belowring        dead_abovering
+    keycode 47  = j               J                #Greek_zeta
+    keycode 48  = aring           Aring            #dead_belowring        dead_abovering
     keycode 49  = odiaeresis      Odiaeresis       oslash                Oslash
     keycode 50  = adiaeresis      Adiaeresis       ae                    AE
     keycode 51  = comma           semicolon        dead_belowcomma
