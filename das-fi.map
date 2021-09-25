@@ -36,8 +36,8 @@ keycode 37  = i               I                iacute                Iacute
 keycode 38  = o               O                oacute                Oacute
 keycode 39  = e               E                epsilon
 keycode 40  = c               C                ccedilla              Ccedilla
-
 keycode 43  = asterisk        slash            dead_cedilla
+
 keycode 86  = f               F                U+2202
 keycode 44  = x               X                multiply              division
 keycode 45  = d               D                eth                   ETH
