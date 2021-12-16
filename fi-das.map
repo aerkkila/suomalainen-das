@@ -1,4 +1,4 @@
-include "linux-with-alt-and-altgr"
+include "qwerty-layout"
 
 keycode 41  = backslash       dead_tilde
 keycode 2   = one             exclam           section               exclamdown
@@ -51,5 +51,3 @@ keycode 50  = adiaeresis      Adiaeresis       ae                    AE
 keycode 51  = comma           semicolon        dead_belowcomma
 keycode 52  = period          colon            dead_diaeresis
 keycode 53  = minus           underscore       dead_macron
-
-keycode 58  = Caps_Lock
