@@ -1,4 +1,5 @@
-include "qwerty-layout"
+include "linux-with-alt-and-altgr"
+alt_is_meta
 
 keycode 41  = backslash       dead_tilde
 keycode 2   = one             exclam           section               exclamdown
@@ -14,40 +15,69 @@ keycode 11  = zero            braceright       degree
 keycode 12  = plus            question         plusminus             questiondown
 keycode 13  = equal           numbersign       U+2248                U+2260
 
-keycode 16  = p               P                dead_belowdot         pi
-keycode 17  = h               H                
-keycode 18  = r               R                dead_circumflex
-keycode 19  = k               K                dead_caron
+keycode 16  = +p               P                dead_belowdot         pi
+keycode 17  = +h               H                VoidSymbol	      VoidSymbol
+keycode 18  = +r               R                dead_circumflex	      VoidSymbol
+keycode 19  = +k               K                dead_caron
 keycode 20  = less            greater          U+2264                U+2265
 keycode 21  = apostrophe      bar                               
-keycode 22  = w               W                U+0259                U+018F
-keycode 23  = u               U                uacute                Uacute
-keycode 24  = y               Y                dead_breve
-keycode 25  = b               B                                 
-keycode 26  = q               Q                oe                    OE
-keycode 27  = z               Z                zcaron                Zcaron
+keycode 22  = +w               W                U+0259                U+018F
+keycode 23  = +u               U                uacute                Uacute
+keycode 24  = +y               Y                dead_breve
+keycode 25  = +b               B                                 
+keycode 26  = +q               Q                oe                    OE
+keycode 27  = +z               Z                zcaron                Zcaron
 
-keycode 30  = s               S                ssharp                Scaron
-keycode 31  = l               L                dead_acute            lstroke
-keycode 32  = n               N                dead_grave            U+2207
-keycode 33  = t               T                thorn                 THORN
-keycode 34  = v               V                
-keycode 35  = g               G                eng                   ENG
-keycode 36  = a               A                aacute                Aacute
-keycode 37  = i               I                iacute                Iacute
-keycode 38  = o               O                oacute                Oacute
-keycode 39  = e               E                epsilon
-keycode 40  = c               C                ccedilla              Ccedilla
+keycode 30  = +s               S                ssharp                Scaron
+keycode 31  = +l               L                dead_acute            lstroke
+keycode 32  = +n               N                dead_grave            U+2207
+keycode 33  = +t               T                thorn                 THORN
+keycode 34  = +v               V                
+keycode 35  = +g               G                eng                   ENG
+keycode 36  = +a               A                aacute                Aacute
+keycode 37  = +i               I                iacute                Iacute
+keycode 38  = +o               O                oacute                Oacute
+keycode 39  = +e               E                epsilon
+keycode 40  = +c               C                ccedilla              Ccedilla
 keycode 43  = asterisk        slash            dead_cedilla
 
-keycode 86  = f               F                U+2202
-keycode 44  = x               X                multiply              division
-keycode 45  = d               D                eth                   ETH
-keycode 46  = m               M                mu
-keycode 47  = j               J                zeta
-keycode 48  = aring           Aring            dead_abovering        dead_abovering
-keycode 49  = odiaeresis      Odiaeresis       oslash                Oslash
-keycode 50  = adiaeresis      Adiaeresis       ae                    AE
+keycode 86  = +f               F                U+2202
+keycode 44  = +x               X                multiply              division
+keycode 45  = +d               D                eth                   ETH
+keycode 46  = +m               M                mu
+keycode 47  = +j               J                zeta
+keycode 48  = +aring           Aring            dead_abovering        dead_abovering
+keycode 49  = +odiaeresis      Odiaeresis       oslash                Oslash
+keycode 50  = +adiaeresis      Adiaeresis       ae                    AE
 keycode 51  = comma           semicolon        dead_belowcomma
 keycode 52  = period          colon            dead_diaeresis
 keycode 53  = minus           underscore       dead_macron
+
+control keycode 16 = Control_p
+control keycode 17 = Control_h
+control keycode 18 = Control_r
+control keycode 19 = Control_k
+control keycode 22 = Control_w
+control keycode 23 = Control_u
+control keycode 24 = Control_y
+control keycode 25 = Control_b
+control keycode 26 = Control_q
+control keycode 27 = Control_z
+
+control keycode 30 = Control_s
+control keycode 31 = Control_l
+control keycode 32 = Control_n
+control keycode 33 = Control_t
+control keycode 34 = Control_v
+control keycode 35 = Control_g
+control keycode 36 = Control_a
+control keycode 37 = Control_i
+control keycode 38 = Control_o
+control keycode 39 = Control_e
+control keycode 40 = Control_c
+
+control keycode 86 = Control_f
+control keycode 44 = Control_x
+control keycode 45 = Control_d
+control keycode 46 = Control_m
+control keycode 47 = Control_j
