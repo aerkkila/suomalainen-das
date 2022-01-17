@@ -1,2 +1,5 @@
-asenna.sh sisältää sen, mitä tarvitaan das-näppäimistön käyttöönottamiseksi Xorg-ympäristössä.
-konsoli.sh asentaa das-asettelun linux-konsolille fi-das.map-tiedostosta ja tekee siitä oletusasettelun.
+Tällä asennetaan oma versioni suomalaisesta das-näppäimistöasettelusta ja tehdään siitä oletusasettelu.
+
+Xorg-ympäristössä ajetaan asenna.sh
+
+Linux-konsolilla ajetaan konsoli.sh
