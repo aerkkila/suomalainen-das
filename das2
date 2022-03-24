@@ -2,8 +2,7 @@
 partial
 xkb_symbols "das2" {
 
-    // Das-näppäimistö omin muokkauksin
-    // Enimmäkseen muokattu vieraskielisten merkkien osalta
+    // Das-näppäimistö omine muokkauksineni 3:nnella ja 4:nnellä tasolla
 
     name[Group1]="Finnish (DAS muokkauksin)";
 
