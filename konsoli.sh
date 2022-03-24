@@ -4,7 +4,7 @@ if [ -f fi-das.map ]; then
     cp fi-das.map /usr/src/linux/drivers/char/defkeymap.map
     cp fi-das.map /usr/share/kbd/keymaps/fi-das.map
 else
-    curl https://raw.githubusercontent.com/avserkkila/suomalainen-das/master/fi-das.map > /usr/src/linux/drivers/char/defkeymap.map
+    curl https://raw.githubusercontent.com/aerkkila/suomalainen-das/master/fi-das.map > /usr/src/linux/drivers/char/defkeymap.map
     cp /usr/src/linux/drivers/char/defkeymap.map /usr/share/kbd/keymaps/fi-das.map
 fi
 loadkeys fi-das
