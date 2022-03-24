@@ -12,9 +12,9 @@ q
 EOF
 fi
 
-if ! grep -q 'xkb_symbols "das2" {' /usr/share/X11/xkb/symbols/fi; then
-    tied='/usr/share/X11/xkb/symbols/fi'
-    [ -f das2 ] && cat das2 >> ${tied} || curl ${url}/das2 >> ${tied}
+tiedosto='/usr/share/X11/xkb/symbols/fi'
+if ! grep -q 'xkb_symbols "das2" {' ${tiedosto}; then
+    cat das2 >> ${tiedosto} 2>/dev/null || curl ${url}/das2 >> ${tiedosto}
 fi
 
 setxkbmap -model pc105 -layout fi,fi,ru,gr -variant das2,nodeadkeys,dos,extended -option grp:shift_caps_toggle
