@@ -12,10 +12,14 @@ q
 EOF
 fi
 
-tiedosto='/usr/share/X11/xkb/symbols/fi'
-if ! grep -q 'xkb_symbols "das2" {' ${tiedosto}; then
-    cat das2 >> ${tiedosto} 2>/dev/null || curl ${url}/das2 >> ${tiedosto}
+tied=/usr/share/X11/xkb/symbols/fi
+if ! grep -q 'xkb_symbols "das2" {' ${tied}; then
+    cat das2 >> $tied 2>/dev/null || curl ${url}/das2 >> $tied
 fi
 
+[ -f keyboard ] && cp keyboard /etc/default/keyboard || curl ${url}/keyboard > /etc/default/keyboard
+
 setxkbmap -model pc105 -layout fi,fi,ru,gr -variant das2,nodeadkeys,dos,extended -option grp:shift_caps_toggle
-localectl --no-convert set-x11-keymap fi,fi,ru,gr pc105 das2,nodeadkeys,dos,extended grp:shift_caps_toggle
+if command -v localectl >/dev/null; then
+    localectl --no-convert set-x11-keymap fi,fi,ru,gr pc105 das2,nodeadkeys,dos,extended grp:shift_caps_toggle
+fi

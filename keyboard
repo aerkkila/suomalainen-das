@@ -1,0 +1,5 @@
+XKBMODEL="pc105"
+XKBLAYOUT="fi,fi,ru,gr"
+XKBVARIANT="das2,nodeadkeys,dos,extended"
+XKBOPTIONS="grp:shift_caps_toggle"
+BACKSPACE="guess"
