@@ -62,4 +62,4 @@ xkb_symbols "das2" {
     include "kpdl(comma)"
     include "level3(ralt_switch)"
     include "compose(rwin)"
-};
+}; // lopetadas2

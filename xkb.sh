@@ -13,8 +13,18 @@ EOF
 fi
 
 tied=/usr/share/X11/xkb/symbols/fi
+[ -f das2 ] || curl ${url}/das2 > das2
 if ! grep -q 'xkb_symbols "das2" {' ${tied}; then
-    cat das2 >> $tied 2>/dev/null || curl ${url}/das2 >> $tied
+    cat das2 >> $tied
+else
+    ed -s $tied >/dev/null <<EOF
+/xkb_symbols "das2"
+-2
+.,/lopetadas2/d
+r das2
+w
+q
+EOF
 fi
 
 [ -f keyboard ] && cp keyboard /etc/default/keyboard || curl ${url}/keyboard > /etc/default/keyboard
