@@ -37,10 +37,10 @@ xkb_symbols "das2" {
     key <AC03> { [  n,               N,                dead_grave,            nabla                 ] };
     key <AC04> { [  t,               T,                thorn,                 THORN                 ] };
     key <AC05> { [  v,               V,                U0263,                 U0194                 ] };
-    key <AC06> { [  g,               G,                eng,                   ENG                   ] };
-    key <AC07> { [  a,               A,                aacute,                Aacute                ] };
-    key <AC08> { [  i,               I,                iacute,                Iacute                ] };
-    key <AC09> { [  o,               O,                oacute,                Oacute                ] };
+    key <AC06> { [  g,               G,                Left,                  eng                   ] };
+    key <AC07> { [  a,               A,                Down,                  aacute                ] };
+    key <AC08> { [  i,               I,                Up,                    iacute                ] };
+    key <AC09> { [  o,               O,                Right,                 oacute                ] };
     key <AC10> { [  e,               E,                Greek_epsilon,         U2208                 ] };
     key <AC11> { [  c,               C,                ccedilla,              Ccedilla              ] };
     key <TLDE> { [  backslash,       dead_tilde,       dead_belowtilde                              ] };
@@ -62,4 +62,5 @@ xkb_symbols "das2" {
     include "kpdl(comma)"
     include "level3(ralt_switch)"
     include "compose(rwin)"
+    //include "vaihtolukko(capslock_is_altgr)"
 }; // lopetadas2
