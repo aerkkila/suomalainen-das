@@ -27,13 +27,18 @@ q
 EOF
 fi
 
-[ -f keyboard ] && cp keyboard /etc/default/keyboard || curl ${url}/keyboard > /etc/default/keyboard
+[ -f keyboard ] && cp keyboard /etc/default/keyboard || curl ${url}/keyboard > /etc/default/keyboard # Onko tämä turha?
 
-if command -v setxkbmap >/dev/null; then
-    setxkbmap -model pc105 -layout fi,fi,ru,gr -variant das2,nodeadkeys,ruu,extended -option grp:shift_caps_toggle
+# setxkbmap, jos ollaan xorg-ympäristössä
+if ! env |grep -q WAYLAND_DISPLAY && env |grep -q DISPLAY; then
+    if command -v setxkbmap >/dev/null; then
+	setxkbmap -model pc105 -layout fi,fi,ru,gr -variant das2,nodeadkeys,ruu,extended -option grp:sclk_toggle,lv3:caps_switch,shift:both_capslock
+    fi
 fi
-if command -v localectl >/dev/null; then
-    localectl --no-convert set-x11-keymap fi,fi,ru,gr pc105 das2,nodeadkeys,ruu,extended grp:shift_caps_toggle
+
+if [ -d /etc/X11/ ]; then
+    [ -f 90-oletus-xkb.conf ] && cp 90-oletus-xkb.conf /etc/X11/xorg.conf.d/ \
+	    || curl ${url}/90-oletus-xkb.conf > /etc/X11/xorg.conf.d/
 fi
 
 #Osa Wayland-ympäristöistä käyttää ympäristömuuttujia näppäimistöasettelun määrittelyyn
@@ -48,4 +53,4 @@ aseta() {
 aseta 'XKB_DEFAULT_MODEL' 'pc105'
 aseta 'XKB_DEFAULT_LAYOUT' 'fi,fi,ru,gr'
 aseta 'XKB_DEFAULT_VARIANT' 'das2,nodeadkeys,ruu,extended'
-aseta 'XKB_DEFAULT_OPTIONS' 'grp:shift_caps_toggle'
+aseta 'XKB_DEFAULT_OPTIONS' 'grp:sclk_toggle,lv3:caps_switch,shift:both_capslock'
