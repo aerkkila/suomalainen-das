@@ -37,6 +37,7 @@ if ! env |grep -q WAYLAND_DISPLAY && env |grep -q DISPLAY; then
 fi
 
 if [ -d /etc/X11/ ]; then
+    mkdir -p /etc/X11/xorg.conf.d
     [ -f 90-oletus-xkb.conf ] && cp 90-oletus-xkb.conf /etc/X11/xorg.conf.d/ \
 	    || curl ${url}/90-oletus-xkb.conf > /etc/X11/xorg.conf.d/
 fi
