@@ -21,7 +21,7 @@ else
 /xkb_symbols "das2"
 -2
 .,/lopetadas2/d
-r das2
+.r das2
 w
 q
 EOF
