@@ -53,6 +53,18 @@ keycode 51  = comma           semicolon        dead_belowcomma
 keycode 52  = period          colon            dead_diaeresis
 keycode 53  = minus           underscore       dead_macron
 
+keycode 1   = Escape          Escape           Escape                Escape
+keycode 14  = BackSpace       BackSpace        BackSpace             BackSpace
+keycode 15  = Tab
+keycode 28  = Return          Return           Return                Return
+keycode 29  = Control         Control          Control               Control
+keycode 42  = Shift           Shift            Shift                 Shift
+keycode 54  = Shift           Shift            Shift                 Shift
+keycode 56  = Alt             Alt              Alt                   Alt
+keycode 57  = space           space            space                 nobreakspace
+keycode 97  = Control         Control          Control               Control
+
+keycode 83  = KP_Comma        KP_Comma         KP_Comma              KP_Comma
 keycode 58  = AltGr
 keycode 100 = Caps_Lock
 
