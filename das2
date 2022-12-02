@@ -21,7 +21,7 @@ xkb_symbols "das2" {
 
     key <AD01> { [  p,               P,                dead_belowdot,         Greek_pi              ] };
     key <AD02> { [  h,               H,                U036A                                        ] };
-    key <AD03> { [  r,               R,                dead_circumflex,       dead_belowcircumflex  ] };
+    key <AD03> { [  r,               R,                U005E,                 dead_circumflex       ] };
     key <AD04> { [  k,               K,                dead_caron                                   ] };
     key <AD05> { [  less,            greater,          lessthanequal,         greaterthanequal      ] };
     key <AD06> { [  apostrophe,      bar,              U201E,                 U201C                 ] };
