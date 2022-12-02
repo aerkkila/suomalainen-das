@@ -2,4 +2,4 @@ Tällä asennetaan oma versioni suomalaisesta das-näppäimistöasettelusta ja t
 
 XKB:ta käyttävässä ympäristössä (Xorg, Wayland) ajetaan xkb.sh
 
-Linux-konsolilla ajetaan konsoli.sh. Tämä ei vaikuta toimivan Ubuntulla, mutta ainakin Arch- ja Artix-linuxilla toimii.
+Linux-konsolilla ajetaan konsoli.sh. Arch-linuxilla johdannaisineen toimii suoraan, mutta Ubuntulla pitää ensin asentaa paketti console-data.

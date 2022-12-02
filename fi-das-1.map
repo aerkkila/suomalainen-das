@@ -3,7 +3,7 @@ alt_is_meta
 
 keycode 41  = backslash       dead_tilde
 keycode 2   = one             exclam           section               exclamdown
-keycode 3   = two             quotedbl         twosuperior           dead_doublegrave      
+keycode 3   = two             quotedbl         twosuperior
 keycode 4   = three           at               sterling                                     
 keycode 5   = four            euro             dollar                currency
 keycode 6   = five            percent          onehalf                                
@@ -15,7 +15,7 @@ keycode 11  = zero            braceright       degree
 keycode 12  = plus            question         plusminus             questiondown
 keycode 13  = equal           numbersign
 
-keycode 16  = +p              P                dead_belowdot
+keycode 16  = +p              P
 keycode 17  = +h              H                VoidSymbol	     VoidSymbol
 keycode 18  = +r              R                dead_circumflex	     VoidSymbol
 keycode 19  = +k              K                dead_caron
@@ -46,10 +46,10 @@ keycode 44  = +x              X                multiply              division
 keycode 45  = +d              D                eth                   ETH
 keycode 46  = +m              M                mu
 keycode 47  = +j              J
-keycode 48  = +aring          Aring            dead_abovering        dead_abovering
+keycode 48  = +aring          Aring
 keycode 49  = +odiaeresis     Odiaeresis       oslash                Oslash
 keycode 50  = +adiaeresis     Adiaeresis       ae                    AE
-keycode 51  = comma           semicolon        dead_belowcomma
+keycode 51  = comma           semicolon
 keycode 52  = period          colon            dead_diaeresis
 keycode 53  = minus           underscore       dead_macron
 
