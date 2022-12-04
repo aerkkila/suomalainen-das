@@ -26,7 +26,7 @@ xkb_symbols "das2" {
     key <AD05> { [  less,            greater,          lessthanequal,         greaterthanequal      ] };
     key <AD06> { [  apostrophe,      bar,              U201E,                 U201C                 ] };
     key <AD07> { [  w,               W,                schwa,                 SCHWA                 ] };
-    key <AD08> { [  u,               U,                uacute,                Uacute                ] };
+    key <AD08> { [  u,               U,                Escape,                Escape                ] };
     key <AD09> { [  y,               Y,                dead_breve,            dead_belowbreve       ] };
     key <AD10> { [  b,               B,                U0332,                 U0305                 ] };
     key <AD11> { [  q,               Q,                oe,                    OE                    ] };
@@ -34,7 +34,7 @@ xkb_symbols "das2" {
 
     key <AC01> { [  s,               S,                ssharp,                Scaron                ] };
     key <AC02> { [  l,               L,                dead_acute,            lstroke               ] };
-    key <AC03> { [  n,               N,                dead_grave,            nabla                 ] };
+    key <AC03> { [  n,               N,                grave,                 nabla                 ] };
     key <AC04> { [  t,               T,                thorn,                 THORN                 ] };
     key <AC05> { [  v,               V,                U0263,                 U0194                 ] };
     key <AC06> { [  g,               G,                Left,                  eng                   ] };
