@@ -3,12 +3,19 @@ url='https://raw.githubusercontent.com/aerkkila/suomalainen-das/master'
 
 if ! grep -q '<name>das2</name>' /usr/share/X11/xkb/rules/evdev.xml; then
     [ -f das2.xml ] || curl ${url}/das2.xml > das2.xml
-    ed -s /usr/share/X11/xkb/rules/evdev.xml<<EOF
-/<shortDescription>fi<\/shortDescription>/
-/<\/variantList>/
--r das2.xml
-w
-q
+    ed -s /usr/share/X11/xkb/rules/evdev.xml <<-EOF
+	/<shortDescription>fi<\/shortDescription>/
+	/<\/variantList>/
+	i
+	        <variant>
+	          <configItem>
+	            <name>das2</name>
+	            <description>Finnish (DAS muokkauksin)</description>
+	          </configItem>
+	        </variant>
+	.
+	w
+	q
 EOF
 fi
 
@@ -17,13 +24,13 @@ tied=/usr/share/X11/xkb/symbols/fi
 if ! grep -q 'xkb_symbols "das2" {' ${tied}; then
     cat das2 >> $tied
 else
-    ed -s $tied >/dev/null <<EOF
-/xkb_symbols "das2"
--2
-.,/lopetadas2/d
-.r das2
-w
-q
+    ed -s $tied >/dev/null <<-EOF
+	/xkb_symbols "das2"
+	-2
+	.,/lopetadas2/d
+	.r das2
+	w
+	q
 EOF
 fi
 
