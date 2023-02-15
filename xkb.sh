@@ -2,7 +2,6 @@
 url='https://raw.githubusercontent.com/aerkkila/suomalainen-das/master'
 
 if ! grep -q '<name>das2</name>' /usr/share/X11/xkb/rules/evdev.xml; then
-    [ -f das2.xml ] || curl ${url}/das2.xml > das2.xml
     ed -s /usr/share/X11/xkb/rules/evdev.xml <<-EOF
 	/<shortDescription>fi<\/shortDescription>/
 	/<\/variantList>/
